@@ -1,0 +1,19 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: $border-width-style-color;
+}
+
+.signIn{
+  @include btn-color($primary-color,$body-bg);
+  @extend .button-border;
+  @include btn-size(80px);
+}
+
+.signUp{
+  @include btn-color($white,$primary-color);
+  @extend .button-border;
+  @include btn-size(80px);
+}

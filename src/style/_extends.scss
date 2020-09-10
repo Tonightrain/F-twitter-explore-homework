@@ -1,0 +1,12 @@
+.information{
+  border-style: none;
+  border-bottom: $border-width-style-color;
+  background-color: $body-bg;
+  width: 400px;
+  padding: 20px 0;
+}
+
+.button-border{
+  border: $button-border-style;
+  border-radius: 70px;
+}

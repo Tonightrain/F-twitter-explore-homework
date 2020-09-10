@@ -2,3 +2,12 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin btn-color($color,$bg-color){
+  color: $color;
+  background-color: $bg-color;
+}
+
+@mixin btn-size($width){
+  width: $width;
+}

@@ -1,0 +1,43 @@
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 633.4px;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border:$border-width-style-color;
+  padding: 40px;
+  border-radius: 10px;
+  gap:15px;
+}
+
+.login input{
+  @extend .information;
+}
+
+.forget{
+  color: $primary-color;
+  margin-left: -320px;
+}
+
+.log-in{
+  @include btn-color($primary-color,$body-bg);
+  @include btn-size(400px);
+  @extend .button-border;
+}
+
+.login p{
+  margin: 0;
+}
+
+.register{
+  @include btn-color($white,$primary-color);
+  @include btn-size(400px);
+  @extend .button-border;
+}
+
