@@ -1,43 +1,48 @@
-main{
+main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 633.4px;
 }
 
-.login{
+.login {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border:$border-width-style-color;
+  border: $border-width-style-color;
   padding: 40px;
   border-radius: 10px;
-  gap:15px;
+  gap: 15px;
 }
-
-.login input{
+//TODO feedback这里可使用Sass的嵌套
+.login input {
+  //TODO feedback .information只给这里一处使用了，没必要抽取一个class，然后再继承
   @extend .information;
 }
 
-.forget{
+.forget {
   color: $primary-color;
   margin-left: -320px;
 }
 
-.log-in{
-  @include btn-color($primary-color,$body-bg);
+//TODO feedback: login本身就是也给完整的单词
+.log-in {
+  @include btn-color($primary-color, $body-bg);
   @include btn-size(400px);
+  //TODO feedback： 所有的知识都是想通的，Sass里面的继承和Java里面的继承一样，一定是同类的东西才继承.
+  // 这里的一个button的class继承一个border的class,是不是不合理呀？
+  // 要下去了解一下@extend和@include的使用场景
   @extend .button-border;
 }
 
-.login p{
+.login p {
   margin: 0;
 }
 
-.register{
-  @include btn-color($white,$primary-color);
+// TODO feedback: 这里的问题和上面的 .log-in一样
+.register {
+  @include btn-color($white, $primary-color);
   @include btn-size(400px);
   @extend .button-border;
 }
-
