@@ -23,7 +23,7 @@ main {
 
 .forget {
   color: $primary-color;
-  margin-left: -320px;
+  align-self: flex-start;
 }
 
 //TODO feedback: login本身就是也给完整的单词
